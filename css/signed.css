@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swamp');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+body{
+	min-height: 100vh;
+	overflow-x: hidden;
+	background: linear-gradient(#2193b0, #fff);
+	
+
+}
+header
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	padding: 30px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 10000;
+}
+header .logo
+{
+	color: #fff;
+	font-weight: 700;
+	text-decoration: none;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+header ul
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+header ul li
+{
+	list-style: none;
+	margin: left;
+
+}
+header ul li a
+{
+	text-decoration: none;
+	padding: 6px 15px;
+	color: #fff;
+	border-radius: 20px;
+}
+header ul li a:hover,
+header ul li a.active{
+	background: #fff;
+	color: #2193b0;
+
+}
+header ul li  img#profile_photo
+{
+	text-decoration: none;
+	padding: 6px 15px;
+	color: #fff;
+	border-radius: 20px;
+	
+	
+	
+}
+section
+{
+	position: relative;
+	width: 100%;
+	height:100vh;
+	padding: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+section::before
+{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	background: linear-gradient(to top,#1c0522,transparent);
+	z-index: 1000;
+}
+.title
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 3.5em;
+	color: #8B0000;
+	text-decoration: none;
+	padding: 6px 15px;
+	border-radius: 50px;
+
+}
+.title a{
+            position: relative;
+            display: inline-block;
+            font-size: 50px;
+            text-transform: uppercase;
+            color: #fff;
+            text-decoration: none;
+            padding: 18px 30px;
+            letter-spacing: 2px;
+            font-weight: 500;
+            margin-top: 50px;
+        }
+        .title a:before{
+            content: '';
+            position: absolute;
+            top: 5;
+            left: 0;
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            background-color: #f09053;
+            z-index: -1;
+            transition: all ease 0.5s;
+        }
+        .title a:hover:before{
+            width: 100%;
+        }
+.sec{
+	position: relative;
+	padding: 100px;
+	background: #1c0522;
+}
+.sec h2
+{
+	font-size: 3.5em;
+	margin-bottom: 10px;
+	color: #fff;
+
+}
+.sec p
+{
+	font-size: 1.2em;
+	
+	color: #fff;
+	 
+}
